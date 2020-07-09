@@ -1,2 +1,3 @@
 #!/bin/bash
-find . ! -name . -prune -print | grep -c /
+
+find . \(-type f -o -type d\) | wc
